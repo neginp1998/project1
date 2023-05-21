@@ -1,0 +1,249 @@
+@font-face {
+    font-family: "VAZIR";
+    src: url("./assets/font/Vazir.woff") format("woff"),url("./assets/font/Vazir-Black.woff") format("woff"),
+    url("./assets/font/Vazir-Light.woff") format("woff"),url("./assets/font/Vazir-Medium.woff") format("woff"),
+    url("./assets/font/Vazir-Thin.woff") format("woff");
+}
+*,body{
+    font-family: "VAZIR";
+    padding: 0;
+    margin: 0;
+}
+/*navigation*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 115px;
+}
+.nav li{
+    display: inline-block;
+    list-style: none;
+}
+.nav li>a{
+    text-decoration: none;
+    color:black;
+    padding: 0 15px;
+}
+.nav li>a:hover{
+    color:red;
+}
+/*header*/
+header{
+    width: 100%;
+    height: 85vh;
+    background-image: url("./assets/img/slide-1.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: .9;
+}
+header:hover{
+    opacity: 1;
+}
+header p{
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+    padding-bottom: 20px;
+
+}
+header .btn{
+    width: 150px;
+    height: 41px;
+    cursor: pointer;
+    background-color: #00aaad;
+    color:white;
+    border: 1px solid #00aaad;
+    border-radius: 10px;
+}
+/*main*/
+main{
+    position: relative;
+}
+.main{
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+/*project*/
+.subcontainer{
+    width: 100%;
+    max-width: 65vw;
+    margin: 0 auto;
+}
+.our-project{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+}
+.our-project h2{
+    padding-bottom: 5px;
+}
+.project{
+    display: flex;
+    gap: 0 1rem;
+}
+.container{
+    margin: 2px;
+    position: relative;
+}
+.container img{
+    width: 400px;
+    height: 300px;
+    display: block;
+}
+.container .overly {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: #00aaad;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+.container:hover .overly{
+    bottom: 0;
+    height: 100%;
+}
+.container .overly .text{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+}
+/*botton*/
+.button{
+    display: flex;
+    flex-direction: end;
+    margin-top: 1rem;
+}
+.btn-1{
+    /* position: absolute;
+    left:10%; */
+    margin-right: auto;
+    width: 150px;
+    height: 41px;
+    cursor: pointer;
+    background-color: #00aaad;
+    color:white;
+    border: 1px solid #00aaad;
+    border-radius: 10px;
+}
+/*certificate*/
+div.certificate{
+    background-image: url("./assets/img/slide-1.jpg");
+    background-position: right;
+    width: 100%;
+    height: 200px;
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.certificate-1{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.certificate-1 img{
+    width: 50px;
+    height: 50px;
+}
+.certificate-1 p{
+    color:white;
+}
+/*article*/
+.article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 70px;
+}
+.news-1{
+    width: 400px;
+    height: 450px;
+    border: 1px solid #4f4f4f;
+    margin: 2px;
+    position: relative;
+}
+.article h2{
+    text-align: center;
+    padding: 5px 0px;
+
+}
+.news{
+    display: flex;
+    gap: 0 1rem;
+}
+.news .news-1 img{
+    width: 400px;
+    height: 300px;
+}
+.news .news-1 h3{
+    text-align: center;
+}
+.news .news-1 p{
+    height: 56px;
+    overflow: hidden;
+    text-align: justify;
+    padding: 20px 10px 0;
+    font-size: .8rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.btn-2{
+    position: absolute;
+    left: 5px;
+    bottom: 10px;
+    width: 79px;
+    height: 26px;
+    cursor: pointer;
+    background-color: #00aaad;
+    color:white;
+    border: 1px solid #00aaad;
+    border-radius: 10px;
+}
+
+footer{
+    display: flex;
+    align-items: flex-start;
+    background-color: #0f3f65;
+    padding: 40px 115px;
+}
+.about-us{
+    color: white;
+    width:100%;
+    padding: 0 10px;
+}
+.about-us p{
+    text-align: justify;
+}
+.contact-me{
+    color: white;
+    width: 100%;
+    padding:0 10px;
+}
+.contact-me h4{
+    padding-bottom: 20px;
+}
+.contact-me p{
+    padding-bottom: 4px;
+}
+.ceo{
+    color: white;
+    width: 100%;
+    padding:0 10px;
+}
+.ceo h4{
+    padding-bottom: 20px;
+}
+.continue{
+    color: #00aaad;
+    padding-right: 10px;
+}
